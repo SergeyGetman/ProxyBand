@@ -1,0 +1,67 @@
+@import "../variables/variables.module.scss";
+
+
+.loginForm {
+  position: relative;
+  padding: 50px 50px;
+  min-width: 400px;
+  background: #fff;
+  border-radius: 10px;
+
+  h2 {
+    display: inline-flex;
+    font-size: 2em;
+    border-left: 5px solid dodgerblue;
+    padding: 10px;
+    color: #2fbf1d;
+    letter-spacing: 5px;
+    margin-bottom: 60px;
+    font-weight: bold;
+  }
+
+}
+
+.congratsForm {
+  position: relative;
+  border-radius: 5px;
+
+
+  h1 {
+    font-size: 2em;
+    border-left: 5px solid dodgerblue;
+    padding: 10px;
+    color: #000;
+    letter-spacing: 5px;
+    margin-bottom: 60px;
+    font-weight: bold;
+  }
+}
+
+.congratsformButton{
+  display: flex;
+  position: relative;
+  left: 25rem;
+}
+
+.testDiv {
+  height: 100px;
+  background-color: $blackColor;
+}
+
+.inputbox {
+  position: relative;
+  width: 300px;
+  height: 50px;
+  margin-bottom: 50px;
+
+  input {
+    margin: 10px;
+    border: 2px solid #000;
+    outline: none;
+    background: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.2em;
+  }
+
+}

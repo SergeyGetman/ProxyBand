@@ -1,0 +1,40 @@
+@import "../variables/variables.module.scss";
+
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+
+  img{
+    background-color: #92bf92;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  a{
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  &__logo{
+    font-size: 25px;
+    font-weight: bold;
+  }
+  a:hover{
+    background-color: $lightGreen;
+    color: $blackColor
+  }
+  &__active{
+    background-color: $dodgerblue;
+    color: $whiteColor
+  }
+
+  &__right{
+    float: right;
+  }
+}
