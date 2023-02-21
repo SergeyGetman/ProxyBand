@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from "next/head";
 import Header from "./Header";
+import Footer from "./Footer";
 
 const MainContainer = ({children, text, keywords}) => {
     return (
@@ -11,6 +12,7 @@ const MainContainer = ({children, text, keywords}) => {
             </Head>
             <div>
                <Header />
+                <Footer />
             </div>
             <div>
                 {children}
