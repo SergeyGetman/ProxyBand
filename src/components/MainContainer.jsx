@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from "next/head";
+import Header from "./Header";
 
 const MainContainer = ({children, text, keywords}) => {
     return (
@@ -8,6 +9,12 @@ const MainContainer = ({children, text, keywords}) => {
                 <meta keywords={'NextJS ' + keywords}/>
                 <title>Main PAGE</title>
             </Head>
+            <div>
+               <Header />
+            </div>
+            <div>
+                {children}
+            </div>
             <h1>{text}</h1>
         </div>
     );

@@ -6,9 +6,10 @@
   padding: 20px 10px;
 
   img{
-    background-color: #92bf92;
+    background-color: #ebf1eb;
+    background-repeat: no-repeat;
     height: 50px;
-    border-radius: 50%;
+    border: 2px solid darkblue;
   }
 
   a{
@@ -24,7 +25,14 @@
   &__logo{
     font-size: 25px;
     font-weight: bold;
+
+    & :hover{
+
+        height: 55px;
+
+    }
   }
+
   a:hover{
     background-color: $lightGreen;
     color: $blackColor

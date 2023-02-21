@@ -30,7 +30,7 @@ const HomePage = () => {
             <div>
                 <Header />
                 <Redirect to="/"/>
-                <div className={styles.testDiv}>
+                <div>
                     <h1>Hello this is home page</h1>
                 </div>
 

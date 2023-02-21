@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from "./stylesComponents.module.scss"
 import Logo from "../images/logoCompany.png"
+import Link from "next/link";
 
 const Header = () => {
     return (
@@ -10,9 +11,11 @@ const Header = () => {
                     <img src={Logo} alt=""/>
                 </a>
                 <div className={styles.header__right}>
-                    <a className={styles.header__active} href="#home">Home</a>
-                    <a href="#contact">Contact</a>
-                    <a href="#about">About</a>
+                    <Link className={styles.header__active} href="/">Home</Link>
+                    <Link href={"contact"}>Contact</Link>
+                    <Link href="about">About</Link>
+                    <Link href="register">Register</Link>
+                    <Link href="login">Login</Link>
                 </div>
             </div>
         </div>
