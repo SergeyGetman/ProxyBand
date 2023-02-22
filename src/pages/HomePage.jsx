@@ -7,8 +7,10 @@ import styles from "../style/style.module.scss"
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import CarouselComponent from "../components/CarouselComponent";
+import ModalWindow from "../components/ModalWindow";
 
 const HomePage = () => {
+
 
     const {isAuth, email} = UseAuth();
     const dispatch = useDispatch();
@@ -31,15 +33,17 @@ const HomePage = () => {
         : (
             <div>
                 <Header />
-                <div>
+                <div className={styles.congratsForm__title}>
+                <ModalWindow />
+                </div>
+                <div className={styles.congratsForm__title__text}>
+                    <h1>Please Touch pictures or click OPEN MODAL</h1>
+                </div>
+                <div style={{height: "1200px", position: "absolute"}}>
                     <CarouselComponent />
-                </div>
 
-                <Footer />
-                <Redirect to="/"/>
-                <div>
-                    <h1>Hello this is home page</h1>
                 </div>
+                <Footer />
 
             </div>
 

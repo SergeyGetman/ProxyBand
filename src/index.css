@@ -3,7 +3,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     height: 100vh;
-    background: linear-gradient(45deg, greenyellow, dodgerblue);
+    background: linear-gradient(45deg, #378658, #7d8d9b);
     font-family: "Sansita Swashed", cursive;
 }
 

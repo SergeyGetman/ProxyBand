@@ -21,9 +21,39 @@
 
 }
 
+@keyframes textAnimation {
+  from {
+    color: #121211;
+    font-size: 10px;
+
+  }
+  to {
+    color: #f1eef2;
+    font-size: 3.5rem;
+  }
+}
+
 .congratsForm {
   position: relative;
   border-radius: 5px;
+
+  &__title{
+    padding: 20px;
+    height: 100%;
+
+    &__text{
+      text-align: center;
+      top: 10%;
+      animation-name: textAnimation;
+      animation-duration: 6s;
+      animation-iteration-count: infinite;
+    }
+
+
+  }
+
+
+
 
 
   h1 {

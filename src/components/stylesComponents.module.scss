@@ -39,4 +39,48 @@
     float: right;
   }
 }
+.carousel{
+  height: 620px;
+  width: 500px;
+  box-shadow: 10px 5px 5px #1bc9b8;
+}
+
+.slideInner{
+  background-size: contain;
+}
+
+@keyframes btnAnimation {
+  from {
+   margin-top: 10px
+
+  }
+  to {
+    margin-top: -20px
+  }
+}
+
+.blockModal{
+  text-align: center;
+
+
+  button{
+    font-size: 5rem;
+    color: white;
+    animation-name: btnAnimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+
+  &__modalWindow {
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 32px;
+
+  }
+}
+
+
 
