@@ -12,7 +12,6 @@ const Header = () => {
                 </a>
                 <div className={styles.header__right}>
                     <Link className={styles.header__active} href="/">Home</Link>
-                    <Link href="about">About</Link>
                     <Link href="register">Register</Link>
                     <Link href="login">Login</Link>
                 </div>

@@ -29,7 +29,7 @@
   }
   to {
     color: #f1eef2;
-    font-size: 3.5rem;
+    font-size: 2rem;
   }
 }
 
@@ -37,23 +37,20 @@
   position: relative;
   border-radius: 5px;
 
-  &__title{
+  &__title {
     padding: 20px;
     height: 100%;
 
-    &__text{
+    &__text {
       text-align: center;
       top: 10%;
       animation-name: textAnimation;
       animation-duration: 6s;
-      animation-iteration-count: infinite;
+      animation-iteration-count: 3;
     }
 
 
   }
-
-
-
 
 
   h1 {
@@ -67,7 +64,7 @@
   }
 }
 
-.congratsformButton{
+.congratsformButton {
   display: flex;
   position: relative;
   left: 25rem;

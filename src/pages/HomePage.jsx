@@ -1,12 +1,11 @@
 import React from 'react';
-import {Redirect, useHistory} from "react-router-dom";
+import {useHistory} from "react-router-dom";
 import {UseAuth} from "../hooks/UseAuth";
 import {useDispatch} from "react-redux";
 import {removeUser} from "../store/slice/userSlice";
 import styles from "../style/style.module.scss"
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import CarouselComponent from "../components/CarouselComponent";
 import ModalWindow from "../components/ModalWindow";
 
 const HomePage = () => {
@@ -37,11 +36,7 @@ const HomePage = () => {
                 <ModalWindow />
                 </div>
                 <div className={styles.congratsForm__title__text}>
-                    <h1>Please Touch pictures or click OPEN MODAL</h1>
-                </div>
-                <div style={{height: "1200px", position: "absolute"}}>
-                    <CarouselComponent />
-
+                    <h1>Please click OPEN MODAL</h1>
                 </div>
                 <Footer />
 

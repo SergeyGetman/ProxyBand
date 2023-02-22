@@ -43,7 +43,7 @@ button:hover{
 
 
 .footer-distributed{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     background: #444;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
