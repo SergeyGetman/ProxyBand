@@ -6,6 +6,7 @@ import {removeUser} from "../store/slice/userSlice";
 import styles from "../style/style.module.scss"
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import CarouselComponent from "../components/CarouselComponent";
 
 const HomePage = () => {
 
@@ -30,6 +31,10 @@ const HomePage = () => {
         : (
             <div>
                 <Header />
+                <div>
+                    <CarouselComponent />
+                </div>
+
                 <Footer />
                 <Redirect to="/"/>
                 <div>
