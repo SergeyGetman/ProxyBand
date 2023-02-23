@@ -49,7 +49,7 @@ function CarouselComponent() {
 
                 </Slider>
                 <ButtonBack>Back</ButtonBack>
-                <div style={{right: "45px"}}>
+                <div className={styles.carousel__btn}>
 
                     <ButtonNext>Next</ButtonNext>
                 </div>
