@@ -22,7 +22,7 @@ import CarouselComponent from "./CarouselComponent";
                 aria-labelledby="modal-modal-title"
                 aria-describedby="modal-modal-description"
             >
-                <Box sx={styles.blockModal__modalWindow}>
+                <Box className={styles.blockModal__modalWindow}>
                     <Typography className={styles.blockModal__modalWindow} id="modal-modal-title" variant="h6" component="h2">
                         <CarouselComponent />
                     </Typography>

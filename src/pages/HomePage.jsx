@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {useHistory} from "react-router-dom";
-import {UseAuth} from "../hooks/UseAuth";
+import {useAuth} from "../hooks/useAuth";
 import {useDispatch} from "react-redux";
 import {removeUser} from "../store/slice/userSlice";
 import styles from "../style/style.module.scss"
@@ -11,9 +11,12 @@ import ModalWindow from "../components/ModalWindow";
 const HomePage = () => {
 
 
-    const {isAuth, email} = UseAuth();
+    const {isAuth, email} = useAuth();
     const dispatch = useDispatch();
     const {push} = useHistory()
+
+
+
 
     return isAuth ? (
             <div>
