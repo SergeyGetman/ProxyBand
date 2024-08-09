@@ -3,7 +3,12 @@ body {
     padding: 0;
     box-sizing: border-box;
     height: 100vh;
-    background: linear-gradient(45deg, #378658, #7d8d9b);
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #9d1df0 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%, #b239ed 75%,#bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%, #c83beb 75%,#bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+
     font-family: "Sansita Swashed", cursive;
 }
 
@@ -51,7 +56,7 @@ button:hover{
     width: 100%;
     font: bold 16px sans-serif;
     text-align: left;
-    padding: 50px 60px 40px;
+    padding: 50px;
     overflow: hidden;
 }
 

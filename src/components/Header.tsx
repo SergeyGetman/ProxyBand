@@ -3,7 +3,7 @@ import styles from "./stylesComponents.module.scss"
 import Logo from "../images/logoCompany.png"
 import Link from "next/link";
 
-const Header = () => {
+const Header = ({actStyle}) => {
     return (
         <div>
             <div className={styles.header}>
@@ -14,7 +14,7 @@ const Header = () => {
                     <Link className={styles.header__active} href="/">Home</Link>
                     <Link href="/insta-users">Insta Guid</Link>
                     <Link href="register">Register</Link>
-                    <Link href="login">Login</Link>
+                    <Link href="Login">Login</Link>
                 </div>
             </div>
         </div>

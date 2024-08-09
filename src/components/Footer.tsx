@@ -1,6 +1,5 @@
 import React from 'react';
 import "../index.css"
-import Logo from "../images/logoCompany.png"
 
 const Footer = () => {
     return (
@@ -9,7 +8,6 @@ const Footer = () => {
 
                 <div className="footer-left">
 
-                    <h3>Proxy Band<img style={{height: "50px"}} src={Logo} alt="logo"/></h3>
 
                     <p className="footer-links">
                         <a href="#">Home</a>
@@ -25,7 +23,7 @@ const Footer = () => {
                         <a href="#">Contact</a>
                     </p>
 
-                    <p className="footer-company-name">Proxy Band</p>
+                    <p className="footer-company-name">instagramm</p>
 
                     <div className="footer-icons">
 
@@ -45,7 +43,7 @@ const Footer = () => {
                     <form action="#" method="post">
 
                         <input type="text" name="email" placeholder="Email" />
-                            <textarea name="message" placeholder="Message"></textarea>
+                            <input name="message" placeholder="Message"></input>
                             <button style={{display: "initial"}}>Send</button>
 
                     </form>
