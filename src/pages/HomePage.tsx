@@ -1,5 +1,4 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
 import { useAuth } from '../hooks/useAuth';
 import { useDispatch } from 'react-redux';
 import { removeUser } from '../store/slice/userSlice';
@@ -7,11 +6,11 @@ import styles from '../style/style.module.scss';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ModalWindow from '../components/ModalWindow';
+import { redirect } from 'next/navigation';
 
 const HomePage = () => {
   const { isAuth, email } = useAuth();
   const dispatch = useDispatch();
-  const { push } = useHistory();
 
   return isAuth ? (
     <div>
@@ -21,7 +20,7 @@ const HomePage = () => {
 
       <button onClick={() => dispatch(removeUser())}>You can LOG OUT: {email}</button>
       <div className={styles.congratsformButton}>
-        <button onClick={() => push('/login')}>BACK</button>
+        <button onClick={() => redirect('/login')}>BACK</button>
       </div>
     </div>
   ) : (

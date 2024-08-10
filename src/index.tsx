@@ -4,12 +4,11 @@ import './index.css';
 
 import { Provider } from 'react-redux';
 import Navigation from './navigation';
-
-const storeB: any = {};
+import { store } from './store/index';
 
 ReactDOM.render(
   <>
-    <Provider store={storeB}>
+    <Provider store={store}>
       <Navigation />
     </Provider>
   </>,
