@@ -7,6 +7,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ModalWindow from '../components/ModalWindow';
 import { redirect } from 'next/navigation';
+import Navigation from '../navigation';
 
 const HomePage = () => {
   const { isAuth, email } = useAuth();
@@ -26,6 +27,8 @@ const HomePage = () => {
   ) : (
     <div>
       <Header />
+      <Navigation />
+
       <div className={styles.congratsForm__title}>
         <ModalWindow />
       </div>
