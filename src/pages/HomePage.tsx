@@ -9,7 +9,7 @@ import ModalWindow from '../components/ModalWindow';
 import { redirect } from 'next/navigation';
 import Navigation from '../navigation';
 import { Box, Skeleton } from '@mui/material';
-import { UserCardViewsUi } from '../style/styled/UserCardViews';
+import Blog from '../components/Blog';
 
 const HomePage = () => {
   const { isAuth, email } = useAuth();
@@ -29,21 +29,11 @@ const HomePage = () => {
   ) : (
     <div>
       <Header />
-      <Navigation />
 
       <Box>
-        <UserCardViewsUi>
-          <h1>This is Styled Component</h1>
-        </UserCardViewsUi>
-        <Skeleton variant="rectangular" width={210} height={118} />
+        <Blog text="BLOG-CONTENT" children={<ModalWindow />} />
       </Box>
 
-      <div className={styles.congratsForm__title}>
-        <ModalWindow />
-      </div>
-      <div className={styles.congratsForm__title__text}>
-        <h1>Please click OPEN MODAL</h1>
-      </div>
       <Footer />
     </div>
   );

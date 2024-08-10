@@ -2,8 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import Header from './Header';
 import Footer from './Footer';
-import Navigation from '../navigation';
-import HomePage from 'pages/HomePage';
+import { Box } from '@mui/material';
 
 const MainContainer = ({ children, text, keywords }) => {
   return (
@@ -14,12 +13,10 @@ const MainContainer = ({ children, text, keywords }) => {
       </Head>
       <div>
         <Header />
-        <Navigation />
-
         <Footer />
       </div>
       <div>{children}</div>
-      <h1>{text}</h1>
+      <Box>{text}</Box>
     </div>
   );
 };

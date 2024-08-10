@@ -20,3 +20,11 @@ export const UserCardViewsUi = styled(Box)(({ theme }) => ({
     width: 'calc(50% - 12px);',
   },
 }));
+
+export const BlogViewsUi = styled(Box)(({ theme }) => ({
+  backgroundColor: '#626b68',
+
+  [theme.breakpoints.between(1651, 2000)]: {
+    width: 'calc(20% - 20px)',
+  },
+}));
