@@ -8,6 +8,8 @@ import Footer from '../components/Footer';
 import ModalWindow from '../components/ModalWindow';
 import { redirect } from 'next/navigation';
 import Navigation from '../navigation';
+import { Box, Skeleton } from '@mui/material';
+import { UserCardViewsUi } from '../style/styled/UserCardViews';
 
 const HomePage = () => {
   const { isAuth, email } = useAuth();
@@ -28,6 +30,13 @@ const HomePage = () => {
     <div>
       <Header />
       <Navigation />
+
+      <Box>
+        <UserCardViewsUi>
+          <h1>This is Styled Component</h1>
+        </UserCardViewsUi>
+        <Skeleton variant="rectangular" width={210} height={118} />
+      </Box>
 
       <div className={styles.congratsForm__title}>
         <ModalWindow />
